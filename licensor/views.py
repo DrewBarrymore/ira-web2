@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from .import validater
+# from .import validater
 from .models import Access_key
 from datetime import datetime
 from django.views.generic import TemplateView

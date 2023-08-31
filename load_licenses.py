@@ -2,7 +2,7 @@ import csv
 from licensor.models import Access_key
 
 filenames = [
-    '27Two Creative LLP2023_03_13 17:32:01.csv',
+    'Quest_Offices_Pvt_Ltd.csv',
 ]
 
 
@@ -19,6 +19,6 @@ def load_keys(filename:str):
     except Exception as e:
         print(f'Unable to create and load passkey information in django models db--{str(e)}')
 
-# for file in filenames:
-#     print(file)
-#     load_keys(filename=file)
+for file in filenames:
+    print(file)
+    load_keys(filename=file)

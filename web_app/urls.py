@@ -20,4 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('licensor/', include('licensor.urls')),
     path('ira/', include('ira.urls')),
+    path('', include('ira.urls'))
 ]

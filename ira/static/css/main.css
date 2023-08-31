@@ -32,6 +32,7 @@
 	background-color: #0c0c0c
 }
 
-/*
-.work-request button:focus{outline:none -webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
-*/
+.copyright{
+	display: inline-block;
+	margin: 0 auto;
+}

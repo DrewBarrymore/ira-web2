@@ -108,14 +108,14 @@ class keyGen:
                 self.generate_key()
                 self.make_fernet()
                 split_info = client.split('-')
-                client_name = split_info[0]
+                client_name = split_info[0].replace(" ","_")
                 days_licensed = int(split_info[1])
                 num_licenses = int(split_info[2])
                 valid_till = split_info[3]
                 feret_key_str = self._key.decode('utf-8')
                 timeStamp = datetime.strftime(datetime.utcnow(), "%Y_%m_%d %H:%M:%S")
                 dateStamp = datetime.strftime(datetime.utcnow(), "%Y_%m_%d")
-                passcode_file = client_name + timeStamp + ".csv"
+                passcode_file = client_name + ".csv"
                 with open(passcode_file, 'w') as license_opfile:
                     license_opfile.write("client,crypto_key,license_key,key_num,valid_period,valid_till\n") #header of the generated license file
 
