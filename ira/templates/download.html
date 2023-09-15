@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Download Page</title>
+    {% load static %} 
+    <link rel="stylesheet" href="{% static 'css/download_page.css' %}">
+</head>
+<body>
+    <div id="header">
+        <img src="{% static 'img/logo.png' %}" alt="IRA Logo" width="75">
+        <h1 id="logo_header">Integrated Repertoire of Assessments (IRA)</h1>
+    </div>
+    <div id="content">
+        <!-- Hardware requirements here -->
+        <a id="download-link" href="{% static 'img/art-1.png' %}" download >Download</a>
+        <!-- <p id="access-message">Please access this page from a Windows PC.</p> -->
+    </div>
+    <div id="confirmation">
+        <p id="download-started-message">Download started.</p>
+        <p id="thank-you-message">Thank you for downloading! Redirecting to IRA homepage.</p>
+    </div>
+
+    <section id="system-requirements">
+    <h2 id='req_heading'>System Requirements:</h2>
+    <ul>
+        <li class="sys_reqs"><strong>Operating System:</strong> Windows 8.1 or Later</li>
+        <li class="sys_reqs"><strong>Processor:</strong> Intel Atom or faster</li>
+        <li class="sys_reqs"><strong>RAM:</strong> 2GB (4GB recommended)</li>
+        <li class="sys_reqs"><strong>Storage:</strong> Minimum 300 MB of free space</li>
+        <!-- Add more system requirements as needed -->
+    </ul>
+</section>
+    <script src="{% static 'js/download.js' %}"></script>
+</body>
+</html>

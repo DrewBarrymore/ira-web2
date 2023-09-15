@@ -14,6 +14,9 @@ class Ira_home(TemplateView):
 def redirect_to_home(request):
     return render(request, 'index.html')
 #...........................
+class Ira_download(TemplateView):
+    template_name = 'download.html'
+#...........................
 def send_demo_request(request):
     email_to = ['ashootosh.sharma@gmail.com', 'shuchiksharma@gmail.com', 'ashootosh@27two.com', 'shuchi@27two.com'],
     

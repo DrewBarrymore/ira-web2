@@ -1,0 +1,83 @@
+@font-face {
+    font-family: 'nasalization-rg';
+    src: url("fonts/nasalization-rg.otf");
+}
+
+
+body {
+    background-color: black;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Makes the container full-height of the viewport */
+    margin: 0;
+}
+
+#header {
+    text-align: center;
+    padding: 20px;
+}
+
+#content {
+    text-align: center; /* Center-align the text within the content div */
+    padding: 20px;
+    color: white;
+}
+
+#download-link {
+    background-color: black;
+    border-style: solid;
+    border-color: silver;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#download-link:hover {
+    background-color: #ccc;
+    color: black;
+}
+
+#download-link:active {
+    background-color: silver;
+    color: darkgray;
+}
+
+#access-message {
+    display: none;
+}
+
+#confirmation {
+    display: none;
+}
+
+#logo_header{
+    color: white;
+    font-family: 'nasalization-rg';
+    font-size: 16px;
+}
+
+#h2{
+    color: white;
+}
+
+#req_heading{
+    color: white;
+    font-size: 18px;
+}
+
+.sys_reqs {
+    color: white;
+    font-size: 14px;
+
+}
+
+#confirmation{
+    color: white;
+    font-size: 14px;
+}
